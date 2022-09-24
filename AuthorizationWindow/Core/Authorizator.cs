@@ -10,9 +10,9 @@ namespace AuthorizationWindow.Core
 {
     public class Authorizator
     {
-        public bool Authorization()
-        {
+        //public bool Authorization()
+        //{
             
-        }
+        //}
     }
 }
