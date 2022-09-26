@@ -14,7 +14,7 @@
                     <TransformGroup>
                         <ScaleTransform CenterY="0.5" CenterX="0.5"/>
                         <SkewTransform CenterX="0.5" CenterY="0.5"/>
-                        <RotateTransform Angle="28.811" CenterX="0.5" CenterY="0.5"/>
+                        <RotateTransform Angle="26.565" CenterX="0.5" CenterY="0.5"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </LinearGradientBrush.RelativeTransform>
@@ -34,17 +34,18 @@
 
         <TextBox Style="{DynamicResource TextBoxStyleWithRoundCorners}" x:Name="LoginFromUser" Grid.Row="0" Height="33" Width="235" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="0,52,0,0" MaxLines="1" FontFamily="Arial Rounded MT Bold" FontSize="15"/>
         <TextBox x:Name="PasswordFromUser" Grid.Row="1" Grid.ColumnSpan="2" Height="33" Width="235" Style="{DynamicResource TextBoxStyleWithRoundCorners}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="0,0,0,19" FontFamily="Arial Rounded MT Bold" FontSize="15"/>
-        <Button Style="{DynamicResource ButtonStyleWithRoundCourners}" x:Name="AuthorizationButton" Grid.Row="2" Grid.ColumnSpan="2" FontSize="18" FontFamily="MS Reference Sans Serif" Height="45" Width="240" Margin="0,0,0,13" >Login
+        <Button Style="{DynamicResource ButtonStyleWithRoundCourners}" x:Name="AuthorizationButton" Grid.Row="2" Grid.ColumnSpan="2" FontSize="18" FontFamily="MS Reference Sans Serif" Height="45" Width="240" Margin="0,0,0,13" Click="AuthorizationButton_Click" >Login
         </Button>
         <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Yu Gothic UI Semibold" FontSize="13">Логин:</Label>
         <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Yu Gothic UI Semibold" FontSize="13" Margin="8,0,0,73">Пароль:</Label>
-        <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,33,41,0" FontFamily="Yu Gothic UI Semibold">
+        <StackPanel Grid.Column="1" Grid.Row="1"/>
+        <!--<Button Template="{DynamicResource ButtonTemplateTransporateWhenMouseOver}" Style="{DynamicResource ButtonStyleTransparentBackground}" x:Name="ShowOrHideButton" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,33,41,0" FontFamily="Yu Gothic UI Semibold" Click="Button_Click">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>
             </Button.BorderBrush>
             <Button.Background>
                 <SolidColorBrush Color="#FFCB9191" Opacity="0"/>
-            </Button.Background> Показать пароль
-        </Button>
+            </Button.Background> Скрыть пароль
+        </Button>-->
     </Grid>
 </Window>

@@ -11,6 +11,7 @@ namespace AuthorizationWindow.Core
     {
         public string Login { get; set; }
         public string Password { get; set; }
+        public User() { }
 
         public static ObservableCollection<User> GetUserList()
         {
@@ -28,6 +29,15 @@ namespace AuthorizationWindow.Core
                 }
             };
             return userList;
+        }
+        public bool CheckingUser(string login, string password)
+        {
+            foreach(var user in GetUserList())
+            {
+                if(user.Login == login && user.Password == password)
+                    return true;
+            }
+            return false;
         }
     }
 }
