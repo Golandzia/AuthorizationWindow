@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthorizationWindow.Core
+namespace AuthorizationWindow.Model
 {
     public class User
     {
@@ -30,14 +30,14 @@ namespace AuthorizationWindow.Core
             };
             return userList;
         }
-        public bool CheckingUser(string login, string password)
-        {
-            foreach(var user in GetUserList())
-            {
-                if(user.Login == login && user.Password == password)
-                    return true;
-            }
-            return false;
-        }
+        //public bool CheckingUser(string login, string password)
+        //{
+        //    foreach (var user in GetUserList())
+        //    {
+        //        if (user.Login == login && user.Password == password)
+        //            return true;
+        //    }
+        //    return false;
+        //}
     }
 }

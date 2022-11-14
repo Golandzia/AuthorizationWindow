@@ -1,4 +1,4 @@
-﻿using AuthorizationWindow.Core;
+﻿using AuthorizationWindow.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AuthorizationWindow
+namespace AuthorizationWindow.View.Windows
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -28,19 +28,19 @@ namespace AuthorizationWindow
 
         private void AuthorizationButton_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User();
-            if (user.CheckingUser(LoginFromUser.Text, PasswordFromUser.Text))
-            {
-                MessageBox.Show("Authorization was successful", "Authorization", MessageBoxButton.OK, MessageBoxImage.Information);
-                LoginFromUser.Text = "";
-                PasswordFromUser.Text = "";
-            }
-            else
-            {
-                MessageBox.Show("Invalid login or password", "Authorization", MessageBoxButton.OK, MessageBoxImage.Warning);
-                LoginFromUser.Text = "";
-                PasswordFromUser.Text = "";
-            }
+            //User user = new User();
+            //if (user.CheckingUser(LoginFromUser.Text, PasswordFromUser.Text))
+            //{
+            //    MessageBox.Show("Authorization was successful", "Authorization", MessageBoxButton.OK, MessageBoxImage.Information);
+            //    LoginFromUser.Text = "";
+            //    PasswordFromUser.Text = "";
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Invalid login or password", "Authorization", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //    LoginFromUser.Text = "";
+            //    PasswordFromUser.Text = "";
+            //}
         }
 
         //private void Button_Click(object sender, RoutedEventArgs e)
